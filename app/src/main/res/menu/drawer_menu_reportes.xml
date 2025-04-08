@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/sup_comision"
+            android:icon="@drawable/ic_dolar"
+            android:title="Avance de comisiones"/>
+        <item android:id="@+id/sup_prod_semanal"
+            android:icon="@drawable/ic_dolar"
+            android:title="Produccion Semanal"/>
+        <item android:id="@+id/sup_salario"
+            android:icon="@drawable/ic_dolar"
+            android:title="Extracto de salario"/>
+        <item android:id="@+id/sup_comprobantes"
+            android:icon="@drawable/ic_dolar"
+            android:title="Comprobantes a emitir"/>
+        <item android:id="@+id/sup_canasta_marcas"
+            android:icon="@drawable/ic_dolar"
+            android:title="Canasta de marcas"/>
+<!--        <item android:id="@+id/sup_canasta_clientes"-->
+<!--            android:icon="@drawable/ic_dolar"-->
+<!--            android:title="Canasta de clientes"/>-->
+<!--        <item android:id="@+id/sup_promedio_cuotas"-->
+<!--            android:icon="@drawable/ic_dolar"-->
+<!--            android:title="Promedio de alcance de cuotas de Vend."/>-->
+        <item android:id="@+id/sup_variables_mensuales"
+            android:icon="@drawable/ic_dolar"
+            android:title="Variables mensuales"/>
+        <item android:id="@+id/vend_syncR"
+            android:icon="@drawable/ic_sync"
+            android:title="Sincronizar Reportes"/>
+
+    </group>
+
+</menu>

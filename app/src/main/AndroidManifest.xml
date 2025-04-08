@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="apolo.supervisor.com">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="andtoid.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="andtoid.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="andtoid.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="Android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="Supervisores"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".informes.PedidosPorVendedor"></activity>
+        <activity android:name=".ventas.Promociones" />
+        <activity
+            android:name=".ventas.Pedidos"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="apolo.supervisor.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ventas.ModificarCliente" />
+        <activity android:name=".visitas.ProgramarRuteoT" />
+        <activity android:name=".visitas.ClientesVisitados" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".ventas.Promotores"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ventas.ListaClientes"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ventas.sd.SolicitudDevolucion"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ventas.ConsultaPedidos"
+            android:windowSoftInputMode="adjustNothing" />
+
+        meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCKcfr0aHwMZPPau7HD291NbPT3dWo9K3g" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCva4opR1ok5nXfJeCqYNaESg7mdd8lGmc" />
+
+        <activity
+            android:name=".utilidades.Mapa"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".visitas.VisitaCliente" />
+        <activity
+            android:name=".visitas.RuteoEnMapa"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".visitas.ListaDeRuteosCargados" />
+        <activity android:name=".visitas.baja.Baja" />
+        <activity android:name=".reportes.Deuda" />
+        <activity android:name=".Sincronizacion" />
+        <activity android:name=".reportes.AvanceDeComisiones" />
+        <activity android:name=".reportes.ProduccionSemanal" />
+        <activity android:name=".reportes.ExtractoDeSalario" />
+        <activity android:name=".reportes.ComprobantesPendientes" />
+        <activity android:name=".reportes.CanastaDeMarcas" />
+        <activity android:name=".reportes.CanastaDeClientes" />
+        <activity android:name=".reportes.VariablesMensuales" />
+        <activity android:name=".reportes.PromedioDeAlcanceDeCuotas" />
+        <activity android:name=".informes.EvolucionDiariaDeVentas" />
+        <activity
+            android:name=".informes.DeudaDeClientes"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".informes.ListaDePrecios"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".informes.PedidosEnReparto" />
+        <activity android:name=".informes.RebotesPorVendedor" />
+        <activity android:name=".informes.AvanceDeComisiones" />
+        <activity android:name=".informes.VentasPorCliente" />
+        <activity android:name=".informes.MovimientoDeGestores" />
+        <activity android:name=".informes.VariablesMensuales" />
+        <activity android:name=".informes.CoberturaSemanal" />
+        <activity android:name=".informes.ProduccionSemanal" />
+        <activity android:name=".informes.SeguimientoDeVisitas" />
+        <activity android:name=".configurar.CalcularClavePrueba" />
+        <activity android:name=".configurar.ConfigurarUsuario" />
+        <activity android:name=".configurar.AcercaDe" />
+        <activity android:name=".prueba.VentanaAuxiliar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

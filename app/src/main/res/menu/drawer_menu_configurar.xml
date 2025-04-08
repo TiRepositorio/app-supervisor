@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/sup_clave"
+            android:icon="@drawable/ic_clave"
+            android:title="Ingresar clave"/>
+        <item android:id="@+id/sup_usuario"
+            android:icon="@drawable/ic_usuario"
+            android:title="Configurar Usuario"/>
+        <item android:id="@+id/sup_actualizar"
+            android:icon="@drawable/ic_actualizar"
+            android:title="Actualizar version"/>
+        <item android:id="@+id/sup_acerca_de"
+            android:icon="@drawable/ic_acerca"
+            android:title="Acerca de"/>
+        <item android:id="@+id/sup_salir"
+            android:icon="@drawable/ic_salir"
+            android:title="Salir de la aplicacion"/>
+
+    </group>
+
+</menu>

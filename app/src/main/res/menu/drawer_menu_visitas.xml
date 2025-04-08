@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item android:id="@+id/sup_visita"
+            android:icon="@drawable/ic_visita"
+            android:title="Visita cliente"/>
+        <item android:id="@+id/sup_visitado"
+            android:icon="@drawable/ic_visitado"
+            android:title="Clientes visitados"/>
+        <item android:id="@+id/sup_ruteo_mapa"
+            android:icon="@drawable/ic_mapa_ruteo"
+            android:title="Ruteo del vendedor en mapa"/>
+        <item android:id="@+id/sup_prog_ruteo"
+            android:icon="@drawable/ic_calendario"
+            android:title="Programar ruteo"/>
+        <item android:id="@+id/sup_ruteo_lista"
+            android:icon="@drawable/ic_ruteo_lista"
+            android:title="Lista de ruteos cargados"/>
+        <item android:id="@+id/dar_de_baja"
+            android:icon="@drawable/ic_baja"
+            android:title="Dar de Baja Cliente"/>
+        <item android:id="@+id/vend_syncV"
+            android:icon="@drawable/ic_sync"
+            android:title="Sincronizar datos de visitas"/>
+
+    </group>
+
+</menu>

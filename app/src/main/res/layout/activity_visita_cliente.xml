@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondoOscuro"
+    tools:context=".visitas.VisitaCliente">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/barra_vendedores"
+            />
+        <EditText
+            android:id="@+id/accion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true">
+            <TextView
+                android:text="Sup.:"
+                android:textColor="@color/textoClaro"
+                android:layout_width="60dp"
+                android:gravity="end"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+            <TextView
+                android:id="@+id/tvCabSupervisor"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            >
+
+            <TextView
+                style="@style/textoCuadriculaOscura"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_textview"
+                android:gravity="end|center_vertical"
+                android:text="GP/PV:"
+                android:textColor="@color/textoClaro" />
+            <EditText
+                android:id="@+id/etCabVendedor"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:background="@drawable/border_textview"
+                android:editable="false"
+                style="@style/textoCuadriculaOscura"/>
+
+            <TextView
+                style="@style/textoCuadriculaOscura"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_textview"
+                android:gravity="end|center_vertical"
+                android:text="Zona:"
+                android:textColor="@color/textoClaro"
+                />
+
+            <TextView
+                android:id="@+id/tvCabZona"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:textSize="9dp"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Cliente:"
+                android:textColor="@color/textoClaro"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+            <EditText
+                android:id="@+id/etCabCliente"
+                android:text=""
+                android:editable="false"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Día:"
+                android:textColor="@color/textoClaro"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+            <TextView
+                android:id="@+id/tvDia"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+
+            <TextView
+                style="@style/textoCuadriculaOscura"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_textview"
+                android:gravity="end"
+                android:text="Tiempo:"
+                android:textColor="@color/textoClaro" />
+            <TextView
+                android:id="@+id/tvTiempo"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Entrada:"
+                android:textColor="@color/textoClaro"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+            <TextView
+                android:id="@+id/tvEntrada"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+
+            <TextView
+                style="@style/textoCuadriculaOscura"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_textview"
+                android:gravity="end"
+                android:text="Salida:"
+                android:textColor="@color/textoClaro" />
+            <TextView
+                android:id="@+id/tvSalida"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/border_textview"
+                style="@style/textoCuadriculaOscura"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbEntrada"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Entrada"
+                android:background="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/cbSalida"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Salida"
+                android:background="#FFFFFF"/>
+            <Button
+                android:id="@+id/btReunion"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="8dp"
+                android:text="Marcar Reunion"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="ANALISIS DE LA ZONA"
+                style="@style/footerFinoTabla"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Analisis"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_textviews"
+                    style="@style/cabeceraSubTabla"
+                    />
+                <TextView
+                    android:layout_width="50dp"
+                    android:text="SI"
+                    android:background="@drawable/border_textviews"
+                    style="@style/cabeceraSubTabla"
+                    />
+                <TextView
+                    android:layout_width="50dp"
+                    android:text="NO"
+                    android:background="@drawable/border_textviews"
+                    style="@style/cabeceraSubTabla"
+                    />
+                <TextView
+                    android:layout_width="50dp"
+                    android:text="Punt."
+                    android:background="@drawable/border_textviews"
+                    style="@style/cabeceraSubTabla"
+                    />
+            </TableRow>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btEnviar"
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/textoClaro"
+            android:background="@color/verdeOscuro"/>
+
+        <Button
+            android:id="@+id/btLimpiar"
+            android:text="Limpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/textoClaro"
+            android:background="@color/fondoFooter"/>
+
+    </LinearLayout>
+
+</LinearLayout>

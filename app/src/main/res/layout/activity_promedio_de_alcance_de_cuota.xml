@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reportes.PromedioDeAlcanceDeCuotas"
+    android:background="#08080C"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ddd"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:src="@drawable/ic_dolar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:padding="5dp"
+                android:text="Produccipión semanal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Vendedor"
+                    android:textAlignment="textStart"
+                    style="@style/cabeceraTabla" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:text="%Cuota Log."
+                    android:textAlignment="textEnd"
+                    style="@style/cabeceraTabla" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/lvPromedioDeAlcanceDeCuotaCabecera"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@android:integer/config_longAnimTime" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.3"
+                    android:text="Promedio:"
+                    android:textAlignment="textStart"
+                    style="@style/cabeceraTabla" />
+
+                <TextView
+                    android:id="@+id/tvCabeceraCuotaPromedio"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:text="0 Gs."
+                    android:textAlignment="textEnd"
+                    style="@style/cabeceraTabla" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ddd"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:src="@drawable/ic_dolar_tach" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#ddd"
+                android:padding="10dp"
+                android:text="Resumen"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:src="@drawable/ic_dolar_tach" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Meta"
+                    android:textAlignment="center"
+                    style="@style/cabeceraTabla" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Total a percibir"
+                    android:textAlignment="center"
+                    style="@style/cabeceraTabla" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/lvPromedioDeAlcanceDeCuotaDetalle"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@android:integer/config_longAnimTime" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

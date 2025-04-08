@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/vend_evol_diaria_ventas"
+            android:icon="@drawable/ic_evol_diaria_venta"
+            android:title="Evolución diaria de ventas"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_pedidos_vend"
+            android:icon="@drawable/ic_pedidos_por_vendedor"
+            android:title="Pedidos por vendedor"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_deuda"
+            android:icon="@drawable/ic_dolar_tach"
+            android:title="Deuda de clientes"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_rebotes"
+            android:icon="@drawable/ic_rebote"
+            android:title="Rebotes por vendedor"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_pedido_reparto"
+            android:icon="@drawable/ic_ruteo_lista"
+            android:title="Pedidos en reparto"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_lista_precio"
+            android:icon="@drawable/ic_lista"
+            android:title="Lista de precio"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_syncI"
+            android:icon="@drawable/ic_sync"
+            android:title="Sincronizar Informes"
+            tools:ignore="HardcodedText" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/tres"
+        >
+
+        <item android:id="@+id/titulo"
+            android:title="VENDEDORES"
+            android:enabled="false"
+            tools:ignore="HardcodedText" />
+
+        <item android:id="@+id/vend_comision"
+            android:icon="@drawable/ic_dolar"
+            android:title="Avance de comisiones"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_ventas"
+            android:icon="@drawable/ic_dolar_tach"
+            android:title="Ventas por clientes"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_movimiento"
+            android:icon="@drawable/ic_movimiento"
+            android:title="Movimiento de gestores"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_produccion_semanal"
+            android:icon="@drawable/ic_dolar"
+            android:title="Produccion semanal"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_variables_mensuales"
+            android:icon="@drawable/ic_dolar"
+            android:title="Variables mensuales"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_cobertura_semanal"
+            android:icon="@drawable/ic_dolar"
+            android:title="Cobertura semanal"
+            tools:ignore="HardcodedText" />
+        <item android:id="@+id/vend_seguimiento_visitas"
+            android:icon="@drawable/ic_visitado"
+            android:title="Seguimiento de visitas"
+            tools:ignore="HardcodedText" />
+
+    </group>
+
+</menu>

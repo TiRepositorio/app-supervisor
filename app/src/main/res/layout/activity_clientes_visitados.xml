@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondoOscuro"
+    tools:context=".visitas.ClientesVisitados">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/barra_vendedores"
+            />
+        <EditText
+            android:id="@+id/accion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/fondoFooter">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:text="Desde: "
+                android:textColor="@color/textoClaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etDesde"/>
+
+            <EditText
+                android:id="@+id/etDesde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"
+                android:editable="false"
+                android:background="@color/textoClaro"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:text="Hasta: "
+                android:textColor="@color/textoClaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etHasta"/>
+
+            <EditText
+                android:id="@+id/etHasta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"
+                android:editable="false"
+                android:background="@color/textoClaro"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <RadioGroup
+            android:id="@+id/rgFiltro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPendiente"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:outlineAmbientShadowColor="@color/textoClaro"
+                android:text="Pendiente"
+                android:textColor="@color/textoClaro"
+                android:textColorLink="@color/textoClaro" />
+
+            <RadioButton
+                android:id="@+id/rbEnviado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enviado"
+                android:textColor="@color/textoClaro"
+                android:textColorLink="@color/verdeApolo"/>
+
+            <RadioButton
+                android:id="@+id/rbTodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Todo"
+                android:textColor="@color/textoClaro"
+                android:textColorLink="@color/verdeApolo"/>
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imgBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_buscar"
+            android:background="#55FFFFFF"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:layout_width="40dp"
+                style="@style/cabeceraTabla"/>
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="60dp"
+                    android:text="Codigo"
+                    android:gravity="end"
+                    style="@style/cabeceraTabla"/>
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="220dp"
+                    android:text="Cliente"
+                    android:gravity="start"
+                    style="@style/cabeceraTabla"/>
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="220dp"
+                    android:text="Vendedor"
+                    android:gravity="start"
+                    style="@style/cabeceraTabla"/>
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="80dp"
+                    android:text="Fecha"
+                    style="@style/cabeceraTabla"/>
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="60dp"
+                    android:text="Estado"
+                    style="@style/cabeceraTabla"/>
+            </TableRow>
+
+            <ListView
+                android:id="@+id/lvMarcaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@color/textoClaro"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/imgEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_subir"/>
+        <Button
+            android:id="@+id/btModificar"
+            android:text="Modificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:textColor="@color/textoClaro"
+            android:background="@color/verdeOscuro"/>
+        <Button
+            android:id="@+id/btConsultar"
+            android:text="Consultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:background="@color/quantum_deeporange900"
+            android:textColor="@color/textoClaro"/>
+        <Button
+            android:id="@+id/btEliminar"
+            android:text="Eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textSize="12dp"
+            android:background="@color/fondoFooter"
+            android:textColor="@color/textoClaro"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Supervisores</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_pedidos">Pedidos</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="obtener_ubicacion">Obtener Ubicacion</string>
+    <!--    <string name="info_de_app">Desarrollado por el D.T.I. de Apolo Import S.A.</string>-->
+    <string name="info_de_app"> </string>
+</resources>

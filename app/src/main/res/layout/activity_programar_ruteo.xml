@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:orientation="vertical" >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="horizontal" >-->
+
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:text="PROGRAMAR RUTEO SEMANAL"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_volver"-->
+<!--                android:layout_width="40sp"-->
+<!--                android:layout_height="30sp"-->
+<!--                android:background="@color/translucent_red"-->
+<!--                android:text="X" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llLunes"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal" >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvLunes"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Lunes" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/ibtnAgregarLunes"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="40sp"-->
+<!--                    android:maxWidth="40sp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/suma" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llMartes"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal" >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvMartes"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Martes" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/ibtnAgregarMartes"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="40sp"-->
+<!--                    android:maxWidth="40sp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/suma" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llMiercoles"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal" >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvMiercoles"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Miercoles" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/ibtnAgregarMiercoles"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="40sp"-->
+<!--                    android:maxWidth="40sp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/suma" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llJueves"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal" >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvJueves"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Jueves" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/ibtnAgregarJueves"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="40sp"-->
+<!--                    android:maxWidth="40sp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/suma" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llViernes"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal" >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvViernes"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Viernes" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/ibtnAgregarViernes"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="40sp"-->
+<!--                    android:maxWidth="40sp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/suma" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llSabado"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5sp"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal" >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvSabado"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="Sabado" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/ibtnAgregarSabado"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="40sp"-->
+<!--                    android:maxWidth="40sp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/suma" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal" >-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnEnviar"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Enviar" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnCancelar"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Cancelar" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+</ScrollView>

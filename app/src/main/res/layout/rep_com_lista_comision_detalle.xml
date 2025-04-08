@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvMarca"
+        android:layout_weight="1"
+        android:text="Marca"
+        android:textAlignment="textStart"
+        style="@style/textoTabla"
+        />
+
+    <TextView
+        android:id="@+id/tvTotalVentaDetalle"
+        android:text="Total Venta"
+        android:layout_weight="1.3"
+        android:drawableEnd="?attr/dividerVertical"
+        android:textAlignment="textEnd"
+        style="@style/textoTabla"
+        />
+
+</LinearLayout>

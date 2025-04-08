@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTotalCliente"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:text="2000"-->
+<!--            style="@style/textoTabla"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/tvClientesPositivados"
+            android:layout_width="100dp"
+            android:textAlignment="textEnd"
+            style="@style/textoTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvPorcCobertura"
+            android:layout_width="80dp"
+            android:textAlignment="textEnd"
+            style="@style/textoTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvPorcObjetivo"
+            android:layout_width="80dp"
+            android:textAlignment="textEnd"
+            style="@style/textoTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvPremios"
+            android:layout_width="120dp"
+            android:textAlignment="textEnd"
+            style="@style/textoTabla"
+            />
+
+        <TextView
+            android:id="@+id/tvMontoAPercibir"
+            android:layout_width="120dp"
+            android:textAlignment="textEnd"
+            style="@style/textoTabla"
+            />
+
+
+</LinearLayout>
