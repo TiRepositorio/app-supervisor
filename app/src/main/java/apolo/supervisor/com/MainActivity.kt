@@ -48,6 +48,8 @@ import java.io.IOException
 @Suppress("PrivatePropertyName")
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    //APP DE SUPERVISORES
+
     companion object{
         var utilidadesBD:UtilidadesBD? = null
         var bd:SQLiteDatabase? = null
