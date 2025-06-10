@@ -89,9 +89,6 @@
             android:name=".ventas.ConsultaPedidos"
             android:windowSoftInputMode="adjustNothing" />
 
-        meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCKcfr0aHwMZPPau7HD291NbPT3dWo9K3g" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCva4opR1ok5nXfJeCqYNaESg7mdd8lGmc" />

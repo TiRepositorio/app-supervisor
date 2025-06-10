@@ -61,8 +61,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val tablasSincronizacion: TablasSincronizacion= TablasSincronizacion()
         @SuppressLint("StaticFieldLeak")
         val funcion : FuncionesUtiles = FuncionesUtiles()
-        const val version = "46"
-        const val fechaVersion = "20240226"
+        const val version = "47"
+        const val fechaVersion = "20250610"
         const val versionDelDia = "1"
         @SuppressLint("StaticFieldLeak")
         lateinit var dispositivo : FuncionesDispositivo

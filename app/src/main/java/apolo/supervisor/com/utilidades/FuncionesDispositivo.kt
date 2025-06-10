@@ -72,6 +72,7 @@ class FuncionesDispositivo(var context: Context) {
                 Toast.LENGTH_SHORT
             ).show()
             false
+            //true
         } else {
             true
         }
