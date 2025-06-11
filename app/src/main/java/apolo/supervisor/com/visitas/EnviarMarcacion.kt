@@ -158,10 +158,10 @@ class EnviarMarcacion {
         val fechaIni = ("to_date('" + cabecera["FECHA_VISITA"].toString() + " " + cabecera["HORA_LLEGADA"].toString() + "','dd/MM/yyyy hh24:mi:ss')")
         val fechaFin = ("to_date('" + cabecera["FECHA_VISITA"].toString() + " " + cabecera["HORA_SALIDA"].toString() + "','dd/MM/yyyy hh24:mi:ss')")
 
-        cabCliente = "${FuncionesUtiles.usuario["COD_EMPRESA"]}," + cabecera["COD_CLIENTE"] +
-                     ",'" + cabecera["COD_SUBCLIENTE"] +
-                     "'," + cabecera["COD_SUPERVISOR"] +
-                     ",'" + cabecera["COD_VENDEDOR"] +
+        cabCliente = "${FuncionesUtiles.usuario["COD_EMPRESA"]},'" + cabecera["COD_CLIENTE"] +
+                     "','" + cabecera["COD_SUBCLIENTE"] +
+                     "','" + cabecera["COD_SUPERVISOR"] +
+                     "','" + cabecera["COD_VENDEDOR"] +
                      "'," + fechaMovimiento + "," +  fechaIni + "," + fechaFin +
                      ",'" + cabecera["COMENTARIO"] + "';"
         codSupervisor = cabecera["COD_SUPERVISOR"].toString()
@@ -186,11 +186,11 @@ class EnviarMarcacion {
                 resp = detalle["RESPUESTA"].toString()
             }
 
-            detCliente += "${FuncionesUtiles.usuario["COD_EMPRESA"]},"  + detalle["COD_CLIENTE"] +
-                    ","   + detalle["COD_SUBCLIENTE"] +
-                    ","   + detalle["COD_SUPERVISOR"] +
-                    ","   + detalle["COD_VENDEDOR"] +
-                    ",'"  + detalle["COD_GRUPO"] +
+            detCliente += "${FuncionesUtiles.usuario["COD_EMPRESA"]},'"  + detalle["COD_CLIENTE"] +
+                    "','" + detalle["COD_SUBCLIENTE"] +
+                    "','" + detalle["COD_SUPERVISOR"] +
+                    "','" + detalle["COD_VENDEDOR"] +
+                    "','" + detalle["COD_GRUPO"] +
                     "','" + detalle["COD_MOTIVO"] +
                     "','" + resp + "','" + punt + "';"
         }
@@ -252,10 +252,10 @@ class EnviarMarcacion {
             val fechaMovimiento = "to_date('" + alist[position]["FECHA_VISITA"].toString() + "','dd/MM/yyyy')"
             val fechaIni = "to_date('" + alist[position]["FECHA_VISITA"].toString() + " " + horae + "','dd/MM/yyyy hh24:mi:ss')"
             val fechaFin = "to_date('" + alist[position]["FECHA_VISITA"].toString() + " " + horas + "','dd/MM/yyyy hh24:mi:ss')"
-            cabCliente = "${FuncionesUtiles.usuario["COD_EMPRESA"]}," + alist[position]["COD_CLIENTE"].toString() +
-                    ",'" + alist[position]["COD_SUBCLIENTE"].toString() +
-                    "'," + alist[position]["COD_SUPERVISOR"].toString() +
-                    ",'" + alist[position]["COD_VENDEDOR"].toString() +
+            cabCliente = "${FuncionesUtiles.usuario["COD_EMPRESA"]},'" + alist[position]["COD_CLIENTE"].toString() +
+                    "','" + alist[position]["COD_SUBCLIENTE"].toString() +
+                    "','" + alist[position]["COD_SUPERVISOR"].toString() +
+                    "','" + alist[position]["COD_VENDEDOR"].toString() +
                     "'," + fechaMovimiento + "," + fechaIni + "," + fechaFin +
                     ",'" + alist[position]["COMENTARIO"].toString() + "';"
             codSupervisor = alist[position]["COD_SUPERVISOR"].toString()
